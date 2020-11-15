@@ -34,16 +34,27 @@ console.log(andrei);
 
 
 const manualCart = function() {
-    let cart = document.getElementsByClassName('cart');
+    let cart = document.querySelector(".cart");
     let heightCart = cart.offsetHeight;
     let widthCart = cart.offsetWidth;
-console.log(widthCart);
+    console.log(cart);
+    console.log(heightCart);
+    console.log(widthCart);
 
-    if ( widthCart == 9688 || heightCart == 231) {
+    let card = document.querySelector(".card");
+    let heightCard = card.offsetHeight;
+    let widthCard = card.offsetWidth;
+    console.log(card);
+    console.log(heightCard);
+    console.log(widthCard);
+
+    if ( widthCart == widthCard && heightCart == heightCard ) {
         cart.innerHTML = 'Andrei e smecher'
+        card.innerHTML = 'Andrei e smecher'
         
     } else {
         cart.innerHTML = 'Andrei e bou'
+        card.innerHTML = 'Andrei e bou'
     }
 }; manualCart();
 
@@ -195,4 +206,84 @@ const forWhileEcample = function() {
     }
     
 }
-whiiilee()
+whiiilee();
+
+
+var xxx = function CalculateAge(birthYear, currentYear) {
+    return currentYear - birthYear
+};
+
+
+
+var ANIDIANEI = function() {
+    var yyy = xxx;
+    (function () {
+            let year = new Date().getFullYear();
+            console.log(year);
+            var calculatorcacat = yyy(1996, year)
+            console.log(calculatorcacat);
+    })();
+}
+ANIDIANEI();
+
+
+
+const Pensie = (e) => {
+    const age = 2020 - e;
+    const ret = 65 - age;
+    return ret;
+    
+    
+}
+console.log(Pensie(1993));
+
+
+
+
+
+
+let codingChallengeFive = (function() {
+        const calcAverageScore = (scoreOne, scoreTwo, scoreThree) => {
+            return (scoreOne + scoreTwo + scoreThree) / 3;
+        }
+        const dolphinsAvrgScore = calcAverageScore(44, 23, 71);
+        const dolphinsAvrgScoreTwo = calcAverageScore(85, 54, 41);
+        const koalasAvrgScore = calcAverageScore(65, 54, 49);
+        const koalasAvrgScoreTwo = calcAverageScore(23, 34, 27);
+        console.log(dolphinsAvrgScore, koalasAvrgScore);
+        console.log(dolphinsAvrgScoreTwo, koalasAvrgScoreTwo);
+
+        function CheckWinner(dAvrg, kAvrg) {
+            if (dAvrg > kAvrg) {
+                return `Dolphins win ${dAvrg} vs. ${kAvrg}`
+            } else {
+                return `Koala win ${kAvrg} vs. ${dAvrg}`
+            }
+        }
+        console.log(CheckWinner(dolphinsAvrgScore, koalasAvrgScore));
+        console.log(CheckWinner(dolphinsAvrgScoreTwo, koalasAvrgScoreTwo));
+
+})();
+
+
+
+
+let AnaidExercitiu = (function() {
+    for (let index = 1; index <= 50; index++) {
+        if (index % 3 == 0 && index % 5 == 0 ) {
+            console.log('fizzbuzz');
+        } else if(index % 5 == 0) {
+            console.log('fizz');
+        } else if(index % 3 == 0) {
+            console.log('buzz');
+        } else {
+            console.log(index);
+        }
+    }
+})();
+
+
+
+
+const andreiArray = new Array(12,13,14,15)
+console.log(andreiArray[andreiArray.length - 1]);

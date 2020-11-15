@@ -8,3 +8,14 @@
     align-items: center;
     justify-content: center;
 }
+
+.card {
+    height: 50vh;
+    width: 50vw;
+    margin: 0 auto;
+    background-color: green;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}

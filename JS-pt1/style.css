@@ -3,4 +3,8 @@
     width: 50vw;
     margin: 0 auto;
     background-color: #ff0000;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }

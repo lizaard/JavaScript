@@ -34,7 +34,7 @@ console.log(andrei);
 
 
 const manualCart = function() {
-    let cart = document.querySelector('.cart');
+    let cart = document.getElementsByClassName('cart');
     let heightCart = cart.offsetHeight;
     let widthCart = cart.offsetWidth;
 console.log(widthCart);
@@ -141,3 +141,58 @@ const codingChallengeFour = function() {
 };
 codingChallengeFour();
 
+
+const forWhileEcample = function() {
+
+    let suma = 0;
+
+    for (let index = 0; index <= 100; index++) {
+        suma = suma + index; 
+        
+    }
+
+    console.log(suma);
+    var index = 0;
+    while (index < 10) { 
+        index++;
+        console.log(index);   
+    }
+
+
+    // for (let i = 0; i < 50; i++) {
+    //     if (i % 4 == 0) {
+    //         console.log('diana');
+    //     } else if (i % 4 == 1) {
+    //         console.log('andrei');
+    //     } else if ( i % 4 == 2) {
+    //         console.log('mihaela');
+    //     } else {
+    //         console.log('michele');
+    //     }
+        
+    // }
+
+   
+    
+    
+};
+ forWhileEcample();
+
+
+ function whiiilee() {
+    var i = 0;
+    while(i < 16) {
+        i++
+        if (i % 4 == 0) {
+            console.log('diana');
+        } else if (i % 4 == 1) {
+            console.log('andrei');
+        } else if ( i % 4 == 2) {
+            console.log('mihaela');
+        } else {
+            console.log('michele');
+        }
+    }
+    
+}
+whiiilee()

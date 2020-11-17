@@ -287,3 +287,63 @@ let AnaidExercitiu = (function() {
 
 const andreiArray = new Array(12,13,14,15)
 console.log(andreiArray[andreiArray.length - 1]);
+
+
+
+let Calculu = (() => {
+    let first = Number(document.querySelector('.firstnumber').value);
+    let second = Number(document.querySelector('.secondnumber').value);
+    let egal = Number(document.querySelector('.egal').value);
+    let button = document.querySelector('.buton-egal');
+
+    egal = [];
+    console.log(first, second, egal);
+   
+    function SumaNumberelor(a,b) {
+        return a + b;
+    }
+
+    function AdaugaSuma() {
+        let sumar = SumaNumberelor(first, second)
+        console.log(sumar);
+    }AdaugaSuma()
+
+    egal.innerHTML = AdaugaSuma();
+    console.log(egal);
+    let rezultat = button.addEventListener('click', function() {
+       
+    })
+        console.log(rezultat);
+        
+
+})();
+
+var a = {}
+console.log(a);
+
+let m = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,17];
+console.log(m[10] + 1, m[10 + 1]);
+for(let i = 0; i < m.length - 1; i++) {
+if(m[i] + 1 != m[i + 1]){
+    console.log(m[i] + 1);
+}
+  
+}
+
+
+// for (let index = 0; index < m.length; index++) {
+//     if (condition) {
+        
+//     }
+    
+//     const element = m[index];
+//     console.log(element);
+// }
+// console.log(m.reduce(OAdunare));
+// let element= "0";
+// for (let index = 1; index <= 15; index++) {
+    
+//     element = element + index;
+    
+// }
+// console.log(element);
